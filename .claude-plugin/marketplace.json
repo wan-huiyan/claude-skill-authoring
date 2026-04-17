@@ -1,12 +1,36 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "wan-huiyan-skill-authoring",
-  "description": "Skills and troubleshooting recipes for authoring, diagnosing, and maintaining Claude Code skills. Starts with skill-trigger-eval-subprocess-blindness; designed as the home for future skill-authoring tools.",
+  "description": "End-to-end toolkit for authoring, publishing, syncing, auditing, and diagnosing Claude Code skills. Bundles five complementary plugins covering the full skill lifecycle.",
   "owner": {
     "name": "Huiyan Wan",
     "url": "https://github.com/wan-huiyan"
   },
   "plugins": [
+    {
+      "name": "publish-skill",
+      "source": "./plugins/publish-skill",
+      "description": "Publish Claude Code skills to GitHub and awesome-claude-skills lists with hard-won lessons encoded. Bundled from wan-huiyan/publish-skill.",
+      "version": "2.1.0"
+    },
+    {
+      "name": "skill-sync",
+      "source": "./plugins/skill-sync",
+      "description": "Keep locally installed Claude Code skills in sync with their GitHub repos. Bundled from wan-huiyan/skill-sync.",
+      "version": "1.1.0"
+    },
+    {
+      "name": "skill-portfolio-audit",
+      "source": "./plugins/skill-portfolio-audit",
+      "description": "Run a full quality audit across a portfolio of Claude Code skills and implement all findings. Orchestrates agent-review-panel \u2192 plan-review-integrator \u2192 parallel subagent implementation. Bundled from wan-huiyan/skill-portfolio-audit.",
+      "version": "1.1.0"
+    },
+    {
+      "name": "skill-anonymizer",
+      "source": "./plugins/skill-anonymizer",
+      "description": "Scan Claude Code skills for client-specific data and anonymize for safe sharing. Bundled from wan-huiyan/skill-anonymizer.",
+      "version": "1.1.0"
+    },
     {
       "name": "skill-trigger-eval-subprocess-blindness",
       "source": "./plugins/skill-trigger-eval-subprocess-blindness",
