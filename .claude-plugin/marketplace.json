@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "wan-huiyan-skill-authoring",
+  "description": "Skills and troubleshooting recipes for authoring, diagnosing, and maintaining Claude Code skills. Starts with skill-trigger-eval-subprocess-blindness; designed as the home for future skill-authoring tools.",
+  "owner": {
+    "name": "Huiyan Wan",
+    "url": "https://github.com/wan-huiyan"
+  },
+  "plugins": [
+    {
+      "name": "skill-trigger-eval-subprocess-blindness",
+      "source": "./plugins/skill-trigger-eval-subprocess-blindness",
+      "description": "Diagnose 0% recall results from skill-creator's trigger evaluation loop. Explains why introspection/audit skills appear to never fire in `run_eval.py`/`run_loop.py` even with perfect descriptions, and how to distinguish subprocess blindness from a genuinely broken description.",
+      "version": "1.0.0"
+    }
+  ]
+}
